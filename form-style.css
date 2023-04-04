@@ -1,0 +1,9 @@
+legend {
+    background-color: gray;
+    border: 2px solid;
+    border-radius: 5px;
+}
+fieldset {
+    background-image: url("/images/paper1.png");
+    background-size: cover;
+}
