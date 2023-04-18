@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form-style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <label>E-mail:</label>
+            <input><br>
+
+            <label>Nº de Telefone</label>
+            <input type="tel" pattern="[0-9]{10}"><br>
+
+            <label>Nome de Usuário:</label>
+            <input><br>
+
+            <label>Senha:</label> 
+            <input type="password"><br>
+            <label>Confirmar Senha:</label> 
+            <input type="password"><br>
+
+            <input type="submit" value="Registrar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Personagem</legend>
+
+            <label>Nome:</label>
+            <input><br>
+
+            <label>Nível:</label>
+            <input type="number" min=1 max=15><br>
+
+            <label>Classe:</label>
+            <select>                
+                <option>Guerreiro</option>
+                <option>Ladino</option>
+                <option>Mago</option>
+                <option>Paladino</option>
+            </select><br>
+
+            <label>Raça:</label>
+            <select>
+                <option>Humano</option>
+                <option>Elfo</option>
+                <option>Anão</option>
+                <option>Orc</option>
+            </select><br><br>
+
+            <label>Habilidades:</label><br>
+            Força: <input type="number" min=1 max=20 value="5"><br>
+            Agilidade: <input type="number" min=1 max=20 value="5"><br>
+            Resistência: <input type="number" min=1 max=20 value="5"><br>
+            Carisma: <input type="number" min=1 max=20 value="5"><br>
+            Inteligência: <input type="number" min=1 max=20 value="5"><br>
+            Sabedoria: <input type="number" min=1 max=20 value="5"><br><br>
+
+            Equipamentos:<br>
+            <textarea></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
