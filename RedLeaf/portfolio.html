@@ -3,7 +3,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="portfolio-style.css">
-    <title>Meu Portfólio Pessoal</title>
+    <title>Portfólio RedLeaf</title>
+    <link rel= "shortcut icon" type = "imagem/x-icon" href = "https://raw.githubusercontent.com/ZilFilho/redleaf-web.github.io/main/Images/logo/favicon%20(1).ico"/>
     <style>
       @font-face {
         font-family: "MedievalSharp";
@@ -22,51 +23,72 @@
       <h1>Equipe RedLeaf</h1>
       <nav>
         <ul>
-          <li><a href="#sobre-mim">Sobre nós</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <h5 class="menu1"><a href="#sobre-mim">Sobre nós</a></h5>
+          <h5 class="menu2"><a href="#projetos">Projetos</a></h5>
+          <h5 class="menu3"><a href="#contato">Contato</a></h5>
         </ul>
       </nav>
     </header>
     
     <main>
-      <section id="sobre-mim">
-        <h2>Sobre Nós</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora eveniet vero ut debitis reiciendis, ab modi quia consectetur dolore voluptas veritatis vel vitae non porro architecto minus, rem laboriosam.</p>
+      <section class="sobre" id="sobre-mim">
+        <div class="sobre-div">
+          <h2 class="sobre-titulo">Sobre Nós</h2>
+        <h4 class="sobre-sub">Apaixonados por rpg, somos uma equipe de desenvolvimento de sites que </h4>
+      </div>
+        <img class="imagem" src="img/old-black.png" width="200" height="200">
       </section>
       
-      <section id="projetos">
-        <h2>Projetos</h2>
+      <section class="projetos" id="projetos">
+        <h2 class="titulo">Projetos</h2>
         <ul>
-          <li>
-            <h3><ion-icon name="log-in-outline"></ion-icon> Página de Login</h3>
-            <p><a href="login.html">Uma página de Login para os usúarios dos serviços RedLeaf</a></p>
+          <li class="flex1">
+            <div class="login.c">
+            <h3 class="login"><ion-icon name="log-in-outline"></ion-icon><a href="login.html"> Página de Login</a></h3>
+            <h4 class="login-desc">Uma página de Login para os usúarios<br>dos serviços RedLeaf</h4>
+            </div>
+            <img class="imagem1" src="img/teste1.webp" width="480" height="300">
           </li>
-          <li>
-            <h3><ion-icon name="newspaper-outline"></ion-icon> Formulário</h3>
-            <p>Formulários para cadastro e criação de personagens:
-
-            </p>
+          <li class="flex2">
+            <img class="imagem2" src="img/teste2.png" width="480" height="300">
+            <div class="formulario.c">
+            <h3 class="formulario"><ion-icon name="newspaper-outline"></ion-icon><a href="form.html"> Formulário</a></h3>
+            <h4 class="formulario-desc">Formulários para cadastro e criação</h4>
+            <h5 class="form-desc2"> de personagens</h5>
+            </div>
           </li>
-          <li>
-            <h3><ion-icon name="home-outline"></ion-icon> Homepage e Parallax</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid commodi excepturi molestias fuga suscipit nam repellat possimus placeat! Eveniet veritatis ipsam odio dolore iusto eum hic at illum aperiam quod.</p>
+          <li class="flex3">
+            <div class="homepage.c">
+            <h3 class="homepage"><ion-icon name="home-outline"></ion-icon><a href="homepage.html"> Homepage e Parallax</a></h3>
+            <h4 class="homepage-desc">Página inicial que dá acesso às principais<br>funcionalidades do site</h4>
+          </div>
+          <img class="imagem3" src="img/teste3.png" width="480" height="300">
           </li>
-          <li>
-            <h3><ion-icon name="leaf-outline"></ion-icon> Landing Page</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto cupiditate molestias placeat sed voluptatibus perferendis nemo reiciendis, eveniet, nam laboriosam non aperiam modi vitae sapiente accusamus fuga incidunt inventore tenetur.</p>
+          <li class="flex4">
+            <img class="imagem4" src="img/landing.jpeg" width="480" height="300">
+            <div class="landing.c">
+            <h3 class="landing"><ion-icon name="leaf-outline"></ion-icon> <a href="landingpage.html">Landing Page</a></h3>
+            <h4 class="landing-desc">Página de apresentação do conceito base da</h4>
+            <h5 class="land-desc2"> RedLeaf aos usuários</h5>
+            </div>
         </ul>
       </section>
       
-      <section id="contato">
-        <h2>Contato</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci cum, consequuntur sapiente dolore nulla mollitia nemo ducimus non possimus obcaecati error accusantium sequi illo vero consectetur debitis placeat quisquam!</p>
+      <section class="contatos" id="contato">
+        <div>
+        <h2 class="contato-titulo"> <strong>Contatos</strong></h2>
+        <h4 class="nome1">Antônio Vinícius: antonio.vinicius.sousa07@aluno.ifce.edu.br</h4>
+        <h4 class="nome2">Erick Carneiro: erick.carneiro.oliveira61@aluno.ifce.edu.br</h4>
+        <h4 class="nome3">Hélio Holanda: helio.holanda.duarte07@aluno.ifce.edu.br</h4>
+        <h4 class="nome4">Zildemar Filho: zildemar.mendonca.facanha03@aluno.ifce.edu.br</h4>
+      </div>
+        <img class="imagem" src="img/manus-black.png" width="200" height="200">
       </section>
     </main>
     
-    <footer>
-      <p>Copyright © 2023</p>
-    </footer>
+    <footer class="rodape">
+      <img class="rodape-imagem" src="img/RedLeaf2-adp.png"  width="120" height="120">
+  </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>

@@ -28,6 +28,7 @@ body {
 
 .menu-item:hover {
     color: #ff9797;
+    text-decoration: underline;
 }
 
 .menu-item {
@@ -69,7 +70,7 @@ body {
 
 .principal-escrito-botao:hover {
     background-color: #87131e;
-    color:aliceblue
+    color:aliceblue;
 }
 
 .principal-escrito-botao {

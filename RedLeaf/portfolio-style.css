@@ -15,23 +15,221 @@ body {
   header {
     background-color: rgb(0, 0, 0);
     color: #dc1b2e;
-    padding: 20px;
+    padding: 10px;
   }
-  
+
+  .sobre-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sobre {
+    border-top: 3px solid #d13434;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre-titulo {
+  font-size: 30px;
+}
+
+  .projetos {
+    background: linear-gradient(270deg, #d25353 0%, #810a0a 90%);
+    background-color: #c23535;
+    padding: 20px;
+    border-top: 3px solid #6c0a1a;
+    padding-top: 40px;
+  }
+
+  .titulo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
   h1 {
-    margin: 1;;
+    font-size: 35px;
+    margin: 0px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .flex1 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .imagem1 {
+    border: 4px solid #e2dbd9;
+  }
+
+  .titulo {
+    color: rgba(240, 248, 255, 0.829);
+    padding-bottom: 20px;
+  }
+
+  .login {
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.855);
+  }
+
+  .login:hover {
+    text-decoration: underline;
+  }
+
+  .login-desc {
+    color: #dadada ;
+    font-size: 20px;
+  }
+
+  .login a {
+    color: rgba(240, 248, 255, 0.811);
+    text-decoration: none;
+  }
+
+  .flex4 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    border-top: 2px solid #540909;
+    padding-top: 50px;
+  }
+
+  .landing a {
+    color: rgba(0, 0, 0, 0.811);
+    text-decoration: none;
+  }
+
+  .landing:hover {
+    text-decoration: underline;
+  }
   
+  .landing {
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .landing-desc {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0px;
+  }
+
+  .land-desc2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+  }
+
+  .imagem4 {
+    border: 4px solid #000000;
+  }
+
+  .flex2 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    border-top: 2px solid #540909;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .formulario {
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .formulario:hover {
+    text-decoration: underline;
+  }
+
+  .formulario a {
+    color: rgba(0, 0, 0, 0.811);
+    text-decoration: none;
+  }
+
+  .formulario-desc {
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .form-desc2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+  }
+
+  .imagem2 {
+    border: 4px solid #000000;
+  }
+
+  .flex3 {
+    border-top: 2px solid #540909;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .homepage:hover {
+    text-decoration: underline;
+  }
+
+  .homepage {
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.856);
+  }
+
+  .homepage a {
+    color: rgba(255, 255, 255, 0.895);
+    text-decoration: none;
+  }
+
+  .homepage-desc {
+    font-size: 20px;
+    color:rgba(240, 248, 255, 0.862);
+  }
+
+  .imagem3 {
+    border: 4px solid #e2dbd9;
+  }
+
+
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
+  }
+
+  .menu1 {
+    padding-right: 20px;
+  }
+
+  .menu3 {
+    padding-left: 20px;
   }
   
   nav li {
@@ -46,16 +244,16 @@ body {
   
   /* Estilos da seção de sobre mim */
   #sobre-mim {
-    background-color: #ff9898 ;
+    background-color: #de7e7e ;
     padding: 20px;
   }
   
-  /* Estilos da seção de projetos */
+  /* Estilos da seção de projetos 
   #projetos {
     background: linear-gradient(0deg, #6c0a1a 5%, #ff9898 90%);
     background-color: #c23535;
     padding: 20px;
-  }
+  }*/
   
   ul {
     list-style: none;
@@ -66,16 +264,31 @@ body {
     margin-top: 0;
   }
   
+  .contato-titulo {
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+
   /* Estilos da seção de contato */
   #contato {
-    background-color: #6c0a1a;
+    border-top: 4px solid #6c000b;
+    color: rgb(0, 0, 0);
+    background-color: #dcabab;
     padding: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   
-  /* Estilos do rodapé */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
+  .rodape {
+    background-color:#2F2325;
+    border-top: 3px solid #dc1b2e;
+}
+
+.rodape-imagem {
+    display: block;
+    margin: 0 auto;
+}
