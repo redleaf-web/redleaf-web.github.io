@@ -53,13 +53,15 @@
     justify-content: center;
 }
 .button {
+    color: inherit;
+    text-decoration: none;
     width: 64px;
     height: 64px;
     margin: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 .button-icon {
     height: 50%;    
