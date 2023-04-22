@@ -1,9 +1,77 @@
+* {
+    margin: 0;
+}
+body {
+    background-size: cover;
+    background-image: url("back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 legend {
-    background-color: gray;
+    margin: auto;
+    color: black;
+    background-color: white;
     border: 2px solid;
-    border-radius: 5px;
+    border-bottom: solid gray;
+    border-radius: 25%;
+    font-size: 125%;
+    padding: 5px 15px;
 }
 fieldset {
-    background-image: url("/images/paper1.png");
-    background-size: cover;
+    margin: 2% 15%;
+    background-color: black;
+    color: white;
+    opacity: .75;
+    border-radius: 2%;
+}
+fieldset select {
+    margin: 3px;
+    color: white;
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 15%;
+    padding: 3px 5px;
+}
+fieldset input {
+    color: white;
+    background-color: inherit;
+    border: none;
+    border-bottom: solid grey;
+    margin: 3px;
+}
+fieldset input:focus {
+    outline: none;
+    border-color: lightblue;
+}
+fieldset input[type=number] {
+    width: 40px;
+    border: none;
+    background-color: #3c3c3c;
+    border-radius: 15%;
+    text-align: center;
+}
+fieldset input[type=submit] {
+    background-color: #3c3c3c;
+    padding: 5px;
+    border-radius: 15%;
+    font-size: 15px;
+}
+fieldset textarea {
+    color: inherit;
+    background-color: #3c3c3c;
+    width: 80%;
+    height: 80px;
+    padding: 5px;
+    display: block;
+    margin: 5px auto;
+    border: none;
+    border-radius: 5%;
+    font-size: 18px;
+    text-decoration: underline;
+    text-align: center;
+}
+fieldset textarea:focus {
+    outline: none;
+    background-color: #4c4c4c;
 }
