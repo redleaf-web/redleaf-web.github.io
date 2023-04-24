@@ -35,12 +35,13 @@
     }
     
     header .btn-primary {
-    background-color: #f44336;
+    background-color: #931007;
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    border: 3px solid #ff9e9e;
     }
     
     header .btn-primary:hover {
@@ -228,6 +229,7 @@
         border-radius: 2rem;
         text-decoration: none;
         transition: background-color 0.3s ease;
+        border: 3px solid #ff9e9e;
     }
 
     .contact .btn-primary:hover {
