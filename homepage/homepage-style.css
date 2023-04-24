@@ -208,8 +208,8 @@
     }
 
     .titulo-sab {
-        color: #e11d1d;
-        font-size: 40px;
+        color: #fffefe;
+        font-size: 50px;
     }
 
     .sab {
@@ -218,9 +218,8 @@
         align-items: center;
         justify-content: space-evenly;
         height: 400px;
-        background: linear-gradient(0deg, #be2f28 5%, #85c3c8 90%);
+        background: linear-gradient(0deg, #de726c 5%, #d23b3b 90%);
         border-top: 2px #d16c6c;
-        
     }
     
     .contact button {
@@ -233,18 +232,21 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     }
-    .contact .btn-primary {
-        background-color: #f44336;
+    .btn-sec {
+        align-items: center;
+        background-color: #e03529;
+        border: 1px solid #ffffff;
         color: #fff;
         padding: 1rem 2rem;
         border-radius: 2rem;
         text-decoration: none;
         transition: background-color 0.3s ease;
-    }
-
-    .contact .btn-primary:hover {
+        }
+        
+        
+        .btn-sec:hover {
         background-color: #fff;
-        color: #ee1e0f;
+        color: #f44336;
         }
     /* Estilo do rodapé */
     .rodape {
