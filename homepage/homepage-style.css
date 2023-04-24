@@ -4,15 +4,7 @@
     padding: 0;
     font-family: medievalsharp;
 }
-.parallax {
-    background-image: url("RedLeaf-black2.png");
-    height: 660px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    }
+
     header {
     background-image: url("RedLeaf-black2.png");
     background-size: cover;
@@ -35,13 +27,12 @@
     }
     
     header .btn-primary {
-    background-color: #931007;
+    background-color: #f44336;
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    border: 3px solid #ff9e9e;
     }
     
     header .btn-primary:hover {
@@ -91,6 +82,7 @@
     .about {
     background-image:url("red-dragon2.png");
     height: 897px;
+    background-position: center;
     }
     
     .about h2 {
@@ -112,11 +104,11 @@
     }
     
     .games {
-    background-image: url('RedLeaf-black2.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-color: #59010a;
+    }
+
+    .game1 {
+        background-color: #fff;
     }
     
     .games h2 {
@@ -139,7 +131,7 @@
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    margin-bottom: 2rem;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,7 +221,6 @@
         border-radius: 2rem;
         text-decoration: none;
         transition: background-color 0.3s ease;
-        border: 3px solid #ff9e9e;
     }
 
     .contact .btn-primary:hover {
@@ -237,62 +228,15 @@
         color: #f44336;
         }
     /* Estilo do rodapé */
-    footer {
-    background-color: #000;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .rodape {
+        background-color:#2F2325;
+        border-top: 0.4px solid #dc1b2e;
     }
     
-    footer p {
-    color: #fff;    
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    .rodape-imagem {
+        display: block;
+        margin: 0 auto;
     }
-    
-    footer ul {
-    list-style: none;
-    display: flex;
-    margin-bottom: 1rem;
-    }
-    
-    footer ul li {
-    margin-right: 1rem;
-    }
-    
-    footer ul li a {
-    color: #f44336;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    }
-    
-    footer ul li a:hover {
-    color: #000;
-    }
-    
-    .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-    
-    .footer-links a {
-    font-size: 1.2rem;
-    color: #000;
-    text-decoration: none;
-    margin: 0 1rem;
-    }
-    
-    .footer-links a:hover {
-    color: #f44336;
-    }
-    
-    /* Estilo das animações */
-    .fade-in {
-    animation: fade-in 1s ease;
-    }
-    
     @keyframes fade-in {
     from {
     opacity: 0;
@@ -317,4 +261,3 @@
     }
     }
     
-    /* Fim do estilo CSS */
