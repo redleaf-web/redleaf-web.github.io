@@ -5,40 +5,7 @@
     font-family: medievalsharp;
 }
 
-    header {
-    background-image: url("RedLeaf-black2.png");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-    }
-    
-    
-    
-    header h1 {
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    }
-    
-    header .btn-primary {
-    background-color: #f44336;
-    color: #fff;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    }
-    
-    header .btn-primary:hover {
-    background-color: #fff;
-    color: #f44336;
-    }
+
     
     /* Menu */
     .imagem {
@@ -47,25 +14,25 @@
     left: 0;
       }
 
-    nav {
-    position: relative;
-    bottom:290px;
-    left: 110px;
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+      .cabecalho {
+        background-color: rgb(0, 0, 0);
+        color: #dc1b2e;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2px;
     }
     
-    nav ul {
-    display: flex;
-    list-style: none;
+    .menu {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        gap: 30px;
     }
-    
-    nav ul li {
-    margin-right: 2rem;
-    }
+
     
     nav ul li a {
     color: #fff;
@@ -79,10 +46,43 @@
     }
     
     /* Conteúdo Principal */
+
+    .inicio {
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        height: 700px;
+        background-image: url("https://wallpaperaccess.com/full/1994716.jpg");
+        background-position: center;
+   
+        background-size: cover;
+        
+    }
+
+    .btn-primary {
+        align-items: center;
+        background-color: #ec2416;
+        border: 1px solid #f6717e;
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        }
+        
+        
+        .btn-primary:hover {
+        background-color: #fff;
+        color: #f44336;
+        }
+
     .about {
     background-image:url("red-dragon2.png");
-    height: 897px;
+    height: 400px;
     background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
     }
     
     .about h2 {
@@ -107,8 +107,32 @@
         background-color: #59010a;
     }
 
+    .text {
+        padding-bottom: 60px;
+    }
+
     .game1 {
-        background-color: #fff;
+        height: 450px;
+        background-image: url("https://wallpaperaccess.com/full/3621096.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .game2 {
+        height: 450px;
+        background-image: url("https://images.hdqwalls.com/wallpapers/beach-morning-minimal-art-4k-dp.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .game3 {
+        height: 450px;
+        background-image: url("https://wallpaperaccess.com/full/3621006.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
     }
     
     .games h2 {
@@ -126,10 +150,9 @@
     text-align: center;
     }
     
-    .game-card {
-    background-color: #000;
+    .game-card1 {
+    background-color: #033e2a;
     padding: 2rem;
-    border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     margin: 0px;
     display: flex;
@@ -137,14 +160,43 @@
     align-items: center;
     padding-top: 80px;
     }
+
+    .game-card2 {
+        background-color: #6e95a2;
+        padding: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        }
+
+        .game-card3 {
+            background-color: #035785;
+            padding: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 80px;
+            }
     
-    .game-card img {
+    .img-card {
+    
     max-width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     margin-bottom: 1rem;
     }
-    
-    .game-card h3 {
+
+    .titulos {
+        color: #fff;    
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        }
+
+    .game-card1 h3 {
     color: #fff;    
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -154,54 +206,21 @@
     font-size: 1.2rem;
     text-align: center;
     }
-    .contact {
-    background-image: url('RedLeaf-black2.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 100px;
+
+    .titulo-sab {
+        color: #e11d1d;
+        font-size: 40px;
     }
-    
-    .contact h2 {
-    color: #fff;    
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 100px ;
-    }
-    
-    .contact a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 80px;
-    margin: 0 auto;
-    }
-    
-    .contact label {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    }
-    
-    .contact input
-    {
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
-    }
-    
-    .contact textarea {
-    padding: 1rem;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    border: none;
-    margin-bottom: 1rem;
-    resize: none;
-    height: 10rem;
+
+    .sab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 400px;
+        background: linear-gradient(0deg, #be2f28 5%, #85c3c8 90%);
+        border-top: 2px #d16c6c;
+        
     }
     
     .contact button {
@@ -225,7 +244,7 @@
 
     .contact .btn-primary:hover {
         background-color: #fff;
-        color: #f44336;
+        color: #ee1e0f;
         }
     /* Estilo do rodapé */
     .rodape {
