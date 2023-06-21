@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Styles Conference</title>
+    <link rel="stylesheet" type="" href="assets/stylesheets/">
+  <link href="https://www.cssfontstack.com/MedievalSharp" rel="stylesheet">
+</head>
+<body>
+<header class="primary-header container group">
+  <h1 class="logo">
+  <a href="index.html">Página de <br> Eventos</a>
+  </h1>
+  <h3 class="tagline">Data de Inicio&ndash;Data de Termino &mdash; Local</h3>
+  <nav class="nav primary-nav">
+    <ul>
+      <li><a href="">Home</a></li><!--
+      --><li><a href="">Login</a></li><!--
+      --><li><a href="">Equipe</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="hero container">
+  <h2>Lorem ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita rem et esse, perspiciatis quis nisi eligendi tenetur magni nihil eaque obcaecati! Facere unde ipsa dicta dolore modi, est iure minus.</p>
+  <a class="btn btn-alt" href="">Registre-se</a>
+</section>
+
+
+<section class="row">
+ <div class="grid">
+
+
+  <section class="teaser col-1-3">
+    <h5>Lorem</h5>
+    <a href="">
+    <img src="" alt="Lorem">
+    <h3>Lorem Ipsum</h3>
+    </a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, deleniti saepe sit ullam omnis at, deserunt accusantium repellendus consectetur, incidunt alias? Blanditiis placeat et repellendus nam facilis. Sequi, consectetur iste?</p>
+  </section><section class="teaser col-1-3">
+    <h5>Lorem</h5>
+    <a href="">
+    <img src="" alt="Lorem">
+    <h3>Lorem Ipsum</h3>
+    </a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nesciunt, cumque veniam assumenda eum quas eligendi pariatur tempore accusamus, maiores exercitationem. Dicta asperiores incidunt neque sapiente necessitatibus voluptates, consectetur iure?</p>
+  </section><section class="teaser col-1-3">
+    <h5>Lorem</h5>
+    <a href="">
+    <img src="" alt="Lorem">
+    <h3>Lorem Ipsum</h3>
+    </a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eligendi inventore quidem, tenetur amet at quis dolore sed impedit dignissimos commodi excepturi earum repudiandae exercitationem veritatis aut beatae laborum a?</p>
+    </section>
+  </div>
+</section>
+
+
+<footer class="primary-footer container group">
+  <small>&copy; Lorem Ipsum</small>
+ <nav class="nav">
+   <ul>
+     <li><a href="">Home</a></li>
+     <li><a href="">Login</a></li>
+     <li><a href="">Equipe</a></li
+    </ul>
+ </nav>
+
+
+</footer>
+</body>
+</html>
