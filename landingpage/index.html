@@ -1,42 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <link rel="stylesheet" href="landingpage.css">
-    <link rel= "shortcut icon" type = "imagem/x-icon" href = "https://raw.githubusercontent.com/ZilFilho/redleaf-web.github.io/main/Images/logo/favicon%20(1).ico"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedLeaf - LandingPage</title>
-    <link rel="stylesheet" type="text/css" href="landingpage-style.css">
+	<link rel= "shortcut icon" type = "imagem/x-icon" href = "https://raw.githubusercontent.com/ZilFilho/redleaf-web.github.io/main/Images/logo/favicon%20(1).ico"/>
+	<title>Redleaf Landingpage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="landingpage-style.css">
 </head>
 <body>
-    <reader class="cabecalho">
-      <img class="imagem" src="/img/RedLeaf-black.png" width="140" height="140">
-      <nav class="menu">
-        <a class="menu-item" href="/homepage"> Página principal</a>
-        <a class="menu-item" href="/portfolio">Sobre os criadores</a>
-      </nav>
-    </reader>
+	<header class="cabecalho">
+		<img class="logo" src="RedLeaf-black.png" width="110" height="110">
+		<nav>
+			<ul class="menu">
+				<li><a href="#Sobre">Sobre</a></li>
+				<li><a href="#Aventuras">Aventuras</a></li>
+				<li><a href="/login">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="parallax">
+		<section>
+			<div class="inicio">
+			<a href="/formulario" class="btn-primary">Comece sua aventura agora</a>
+		</div>
+		</section>
+		<section id ="Sobre" class="about">
+			<div class="container">
+				<div>
+				<h2>Sobre a Redleaf</h2>
+				<p>A Redleaf é uma empresa de RPG que oferece aos jogadores a oportunidade de viver aventuras épicas em mundos fantásticos.</p>
+			</div>
+			</div>
+		</section>
+		<section id = "Aventuras" class="games">
+			<div class="container">
+				<h2>Aventuras Criadas por Nós</h2>
+				<p class="text">Na Redleaf, temos uma ampla variedade de aventuras para todos os gostos. Desde histórias curtas e casuais, até jornadas grandes e complexas, temos algo para todos os jogadores. Confira abaixo algumas das nossas aventuras mais populares.</p>
+				<div class="game-card1">
+					<img class="img-card" src="https://i.pinimg.com/originals/19/67/f6/1967f6e8b9fec64edcfbc25c4d144e5f.jpg" alt="Jogo 1" width="750px">
+					<h3 class="titulos">Vestígios de Outrora</h3>
+					<p>"Da decadência à ascenção, as cinzas tornaram-se vívidas, e o sangue rubro derramado regou o presente verde das florestas"</p>
+					<p>Uma aventura fácil para jogadores novatos.</p>
+				</div>
+				<div class="game1">
+					<h3>.</h3>
+				</div>
+				<div class="game-card2">
+					<img class="img-card" src="marc-simonetti-art.jpg" alt="Jogo 2" width="780px">
+					<h3 class="titulos">As 10 Viagens de Lyra Seastorm </h3>
+					<p>"Da terra à agua, veleje pelos quatro cantos do mundo"</p>
+					<p>Uma aventura de nivel mediano para todos os tipos de jogadores.</p>
+				</div>
+				<div class="game2">
+					<h3>.</h3>
+				</div>
+				<div class="game-card3">
+					<img class="img-card" src="camj-the-frozen-king-large.jpg" alt="Jogo 3" width="800px">
+					<h3 class="titulos">O Rei Congelado</h3>
+					<p>"Neste continente gélido, um conto sobre a desolação de um rei congelado atrai os mais astutos às terras do norte"</p>
+					<p>Uma aventura dificil para jogadores experientes.</p>
+				</div>
+				<div class="game3">
+					<h3>.</h3>
+				</div>
+			</div>
+		<section id = "Equipe" class="contact">
+			<div class="sab">
+				<h3 class="titulo-sab">Projeto RedLeaf</h3>
+					<a href="/portfolio" class="btn-sec">Saiba mais</a>
+				</form>
+			</div>
+		</section>
+	</main>
 
-    <main class="conteudo-principal">
-        <section class="principal">
-            <div class="principal-escrito">
-                <h1 class="principal-titulo">Todas as suas aventuras em um só lugar</h1>
-                <h2 class="principal-subtitulo">A RedLeaf é uma comunidade de criação e exploração de mundos ao formato rpg, onde seus personagens podem ter suas próprias histórias entrelaçadas com os de outras pessoas nas campanhas pré-prontas ou criadas por outros jogadores.</h2>
-                <button class="principal-escrito-botao">Quero participar</button>
-            </div>
-            <img class="principal-imagem" src="img/adventure.png"  width="200">
-        </section>
-
-        <section class="conteudo-secundario">
-            <h3 class="secundario-titulo"><strong>O que se pode fazer na RedLeaf</strong></h3>
-            <p class="secundario-paragrafo">1. Criar e gerenciar personagens para jogar no próprio site ou fora dele</p>
-            <p class="secundario-paragrafo">2. Conhecer e jogar em vastos mundos das histórias disponibilizadas periodicamente</p>
-            <p class="secundario-paragrafo">3. Encontrar e interagir com perfis e personagens de outros jogadores</p>
-        </section>
-    </main>
-    <footer class="rodape">
-        <img class="rodape-imagem" src="/img/RedLeaf2-adp.png"  width="120" height="120">
-    </footer>
+		<footer class="rodape">
+			<img class="rodape-imagem" src="/img/RedLeaf2-adp.png"  width="120" height="120">
+		</footer>
 </body>
 </html>
