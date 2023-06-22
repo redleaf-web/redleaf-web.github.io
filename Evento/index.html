@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaf Con - Evento RedLeaf</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <img class="imagem" src="/img/RedLeaf-black.png" width="140" height="140">
+    <nav class="menu">
+      <a class="menu-item" href="/homepage">Página Principal</a>
+      <a class="menu-item" href="/portfolio">Sobre os criadores</a>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Leaf Con</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">Programação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#speakers">Palestrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-4">Leaf Con</h1>
+      <p class="lead">O maior evento de RPG da América Latina</p>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="display-4">Sobre o Evento</h2>
+          <p>Criada em 2006, Leaf Con é um marco na história dos RPGs de mesa. Um evento destinado aos nossos maiores fãs, onde todos podem se reunir e aproveitar uma vasta gama de Paineis, Palestras, Concursos de Cosplays, e muito mais. </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="LeafCon.png" class="img-fluid" alt="Imagem do Evento">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="display-4 text-center">Programação</h2>
+      <p class="lead text-center">Confira a programação completa do evento</p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Palestras </h3>
+          <p>Horário: 10:00 - 14:00</p>
+          <p>Descrição: Quato palestras reunindo quatro dos mais icónicos escritores e desenvolvedores da RedLeaf.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Painel</h3>
+          <p>Horário: 15:00 - 16:30</p>
+          <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speakers" class="py-5">
+    <div class="container">
+      <h2 class="display-4 text-center">Palestrantes</h2>
+      <p class="lead text-center">Conheça nossos palestrantes</p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="Hélio.jpg" class="card-img-top" alt="Imagem do Palestrante">
+            <div class="card-body">
+              <h5 class="card-title">Hélio Holanda Duarte</h5>
+              <p class="card-text">Hélio é um dos escritores e desenvolvedores Sêniors da RedLeaf, já escreveu campanhas icônicas como "O Rei Congelado" e é responsável pela criação de personagens memoráveis, como Lyra Sandstorm e Valarian Cerenaith.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="speaker2.jpg" class="card-img-top" alt="Imagem do Palestrante">
+            <div class="card-body">
+              <h5 class="card-title">Nome do Palestrante 2</h5>
+              <p class="card-text">Descrição do palestrante e suas especialidades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="speaker3.jpg" class="card-img-top" alt="Imagem do Palestrante">
+            <div class="card-body">
+              <h5 class="card-title">Nome do Palestrante 3</h5>
+              <p class="card-text">Descrição do palestrante e suas especialidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="display-4 text-center">Contato</h2>
+      <p class="lead text-center">Entre em contato para mais informações</p>
+
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Leaf Con - RedLeaf</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
