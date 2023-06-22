@@ -18,7 +18,7 @@ body{
   }
   
   .main{
-    background:#fff;
+    background:#fac4c4;
     width:100%;
     box-shadow:0px 5px 15px rgba(0,0,0,0.2);
     border-radius:2px;
@@ -39,8 +39,9 @@ body{
   .main .header{
     width:100%;
     height:200px;
-    background-image: url(https://unsplash.it/400/250?image=1043);
+    background-image: url(https://i.pinimg.com/originals/b2/27/bc/b227bc858a11ee404975aa6761c78857.jpg);
     background-position:top left;
+    background-size: cover;
     border-radius:2px 2px 0 0;
     overflow:hidden;
     position:relative;
@@ -144,7 +145,7 @@ body{
   }
   
   .main ul li label:hover .checkbox{
-    border-color:#999;
+    border-color:#ff0000;
   }
   
   /*CHECKED*/
@@ -154,16 +155,16 @@ body{
   
   .main ul li input[type=checkbox]:checked + label .checkbox, 
   .main ul li input[type=checkbox]:focus + label .checkbox{
-    background:#3bc562;
-    border-color:#3bc562;
+    background:#e31919;
+    border-color:#995050;
   }
   
   .main ul li input[type=checkbox]:checked + label{
-    color:#CCC;
+    color:#c99292;
   }
   
   .main ul li input[type=checkbox]:checked + .icon-pencil{
-    color:green;
+    color:rgb(156, 40, 40);
   }
   
   .main ul li input[type=checkbox]:checked + label .checkbox .fa{
@@ -174,7 +175,7 @@ body{
     display:inline-block;
     width:20px;
     height:20px;
-    border:2px solid #CCC;
+    border:2px solid #a34141;
     position:relative;
     top:2px;
     border-radius:4px;
@@ -378,8 +379,8 @@ body{
     border-radius:50%;
     width:20px;
     height:20px;
-    background:#3bc562;
-    border: 2px solid #3bc562;
+    background:#eb2d2d;
+    border: 2px solid #d01212;
     display:inline-block;
     text-align:center;
     position:relative;
