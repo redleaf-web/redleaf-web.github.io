@@ -37,12 +37,12 @@ video {
 main section {
     width: 100vw;
     height: 100vh;
-}
-#s1 {
-    position: relative;
-}
-#s2 {
-    background-image: url('img/darjeeling_limited_dark.webp');
     background-size: cover;
     background-position: center center;
 }
+section h1 {
+    text-transform: uppercase;
+}
+#s1 { position: relative; }
+#s2 { background-image: url('img/darjeeling_limited_dark.webp'); }
+#s5 { background-image: url('img/grand_budapest_hotel_dark.webp'); }
