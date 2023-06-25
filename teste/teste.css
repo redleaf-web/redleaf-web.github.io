@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(255, 106, 0);
+    background-color: rgb(177, 20, 20);
 }
 
 button:hover > i {
@@ -53,20 +53,38 @@ select {
 .todo-container {
     max-width: 450px;
     margin: 3rem auto;
-    background-color: #fdfdfd;
+    background-color: #ffd0d0;
     padding: 1.5rem;
     border-radius: 15px;
+}
+
+.todo-container h1 {
+    font-size: 40px;
+    color: #a60505;
 }
 
 .todo-container header{
     text-align: center;
     padding: 0 1rem 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #d45e5e;
 }
 
 #todo-form, #edit-form {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ca5050;
+}
+
+.top-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.top-form p {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #b33737;
 }
 
 #todo-form p, #edit-form p {
@@ -88,7 +106,7 @@ select {
 
 #toolbar {
     padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #9b3d3d;
     display: flex;
 }
 
@@ -129,7 +147,7 @@ select {
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #c54848;
     transition: .3s;
 }
 
