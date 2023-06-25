@@ -1,0 +1,139 @@
+@import url('https://fonts.cdnfonts.com/css/medievalsharp');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: medievalsharp;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/8e/39/4b/8e394bf3d08b650fd7526112f27c4aae.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color:rgb(242, 190, 190);
+    color: brown;
+    border: 2px solid brown;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(255, 106, 0);
+}
+
+button:hover > i {
+    color: rgb(255, 255, 255);
+}
+
+button i {
+    color: rgb(182, 22, 22);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, 
+select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none
+}
+
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p, #edit-form p {
+    font-weight: bold;
+    border-bottom: 0.5rem;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
