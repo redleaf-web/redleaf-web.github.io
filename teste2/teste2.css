@@ -9,7 +9,7 @@
 	align-items: center;
 	gap: 2rem;
 	padding-top: 3rem;
-	background-color: aliceblue;
+	background-color: rgb(239, 201, 192);
 	height: 100vh;
 }
 
@@ -21,7 +21,7 @@
 	display: flex;
 	font-size: 55px;
 	font-weight: bold;
-	color: #333;
+	color: #4a4545;
 }
 
 .time {
@@ -29,18 +29,18 @@
 	align-items: center;
 	justify-content: center;
 	margin-right: 10px;
-	color: tomato;
+	color: rgb(238, 72, 72);
 	min-width: 90px;
 }
 
 .separator {
 	padding: 0 10px;
-	color: aqua;
+	color: rgb(203, 5, 5);
 }
 
 #milliseconds {
 	font-size: 30px;
-	color: chocolate;
+	color: rgb(238, 114, 114);
 }
 
 .buttons {
@@ -53,8 +53,10 @@
 	font-size: 18px;
 	font-weight: bold;
 	border-radius: 30px;
+	background-color: #feb2b2;
+	color: #8a0202;
 	cursor: pointer;
-	border: 1px solid #ccc;
+	border: 1px solid #f80000;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -63,7 +65,7 @@
 }
 
 #startBtn {
-	background-color: blue;
+	background-color: rgb(225, 6, 6);
 	color: ghostwhite;
 }
 
