@@ -1,164 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Painel de Controle do Jogo de RPG</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Define a altura da grade para que .sidenav possa ser 100% (ajuste conforme necessário) */
-    .row.content {height: 550px}
-    
-    /* Define a cor de fundo cinza e altura de 100% */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-        
-    /* Em telas pequenas, defina a altura para 'auto' para a grade */
-    @media screen and (max-width: 767px) {
-      .row.content {height: auto;} 
-    }
-  </style>
-  <link rel="stylesheet" href="">
-  <link rel= "shortcut icon" type = "imagem/x-icon" href = ""/>
-  <link rel="stylesheet" type="text/css" href="">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>Redleaf Dashboard</title>
 </head>
 <body>
 
-<reader class="cabecalho">
-  <img class="imagem" src="/img/RedLeaf-black.png" width="140" height="140">
-  <nav class="menu">
-    <a class="menu-item" href="/landingpage">Landing Page</a>
-    <a class="menu-item" href="/portfolio">Sobre os criadores</a>
-  </nav>
-</reader>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Dashboard</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analytics</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Team</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
 
 
-<nav class="navbar navbar-inverse visible-xs">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Painel de Controle</a></li>
-        <li><a href="#">Missões</a></li>
-        <li><a href="#">Inventário</a></li>
-        <li><a href="#">Estatísticas</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Logo</h2>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Painel de Controle</a></li>
-        <li><a href="#section2">Missões</a></li>
-        <li><a href="#section3">Inventário</a></li>
-        <li><a href="#section3">Estatísticas</a></li>
-      </ul><br>
-    </div>
-    <br>
-    
-    <div class="col-sm-9">
-      <div class="well">
-        <h4>Painel de Controle</h4>
-        <p>Bem-vindo ao Painel de Controle da sua campanha. Explore suas missões, gerencie seu inventário e visualize suas estatísticas.</p>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Nível do Personagem</h4>
-            <p>10</p> 
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Ouro</h4>
-            <p>1000</p> 
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Experiência</h4>
-            <p>5000/10000</p> 
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="well">
-            <h4>Vida</h4>
-            <p>80%</p> 
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Missões Ativas</h4>
-            <ul>
-              <li>Derrotar o Dragão</li>
-              <li>Recuperar o Artefato Perdido</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Missões Concluídas</h4>
-            <ul>
-              <li>Resgatar a Princesa</li>
-              <li>Limpar a Floresta Assombrada</li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Inventário</h4>
-            <ul>
-              <li>Espada</li>
-              <li>Poção</li>
-              <li>Escudo</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-8">
-          <div class="well">
-            <h4>Detalhes da Missão</h4>
-            <p>Derrotar o Dragão</p> 
-            <p>Objetivo: Derrotar o poderoso dragão "Morghon" que aterroriza o reino.</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="well">
-            <h4>Estatísticas do Personagem</h4>
-            <ul>
-              <li>Força: 80</li>
-              <li>Agilidade: 60</li>
-              <li>Inteligência: 75</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
 
-<footer class="rodape">
-  <img class="rodape-imagem" src="/img/RedLeaf2-adp.png"  width="120" height="120">
-</footer>
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-check-shield' ></i>
+					<span class="text">
+						<h3>Missões cumpridas:</h3>
+						<p>5/20</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-shield-x' ></i>
+					<span class="text">
+						<h3>Missões falhadas:</h3>
+						<p>2/20</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bx-shield-quarter' ></i>
+					<span class="text">
+						<h3>Status da Campanha:</h3>
+						<p>Em progresso</p>
+					</span>
+				</li>
+			</ul>
 
 
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Perfis</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Personagen</th>
+								<th>Nível</th>
+								<th>Experiência</th>
+								<th>Classe</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Urban the Hagflayer</p>
+								</td>
+								<td>5</td>
+								<td>250/1250</td>
+								<td>Guerreiro</td>
+								<td><span class="status alive">Vivo</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Nrod Lagorsson</p>
+								</td>
+								<td>4</td>
+								<td>200/1000</td>
+								<td>Mago</td>
+								<td><span class="status dead">Morto</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Wamri le Savoureux</p>
+								</td>
+								<td>5</td>
+								<td>500/1250</td>
+								<td>Paladino</td>
+								<td><span class="status wounded">Ferido</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Brukham Nougat</p>
+								</td>
+								<td>4</td>
+								<td>400/1000</td>
+								<td>Paladino</td>
+								<td><span class="status dead">Morto</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="img/people.png">
+									<p>Rolf</p>
+								</td>
+								<td>5</td>
+								<td>800/1250</td>
+								<td>Ladino</td>
+								<td><span class="status alive">Vivo</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="To-Do-List">
+					<div class="head">
+						<h3>To-Do-List</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
 </body>
 </html>
