@@ -1,32 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/ZilFilho/redleaf-web.github.io/main/Images/logo/favicon%20(1).ico" />
-  <title>To-Do List</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="to-do-list.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="to-do-list.css"/>
+    <script src="to-do-list.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="wrapper">
-    <div class="main">
-      <div class="header">
-        <h1>To-Do List</h1>
-      </div>
-      <ul id="todoList"></ul>
-      <div class="add">
-        <div class="add-txt">
-          <div>
-            <span class="fa fa-plus"></span>
-          </div>
-          <span class="txt">Add new</span>
-          <input type="text" id="newItemInput">
+    <reader class="cabecalho">
+        <img class="imagem" src="/img/RedLeaf-black.png" width="110" height="110">
+        <nav class="menu">
+          <a class="menu-item" href="/homepage"> Página principal</a>
+          <a class="menu-item" href="/portfolio">Sobre os criadores</a>
+        </nav>
+      </reader>
+
+    <main class="meio">  
+        <div class="todo-container">
+        <header>
+            <h1>Tarefas a fazer</h1>
+        </header>
+        <form id="todo-form">
+            <div class="top-form">
+            <p>Adicione a sua tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
         </div>
-        <button id="addButton">Add</button>
-      </div>
-    </div>
-  </div>
-  <script src="to-do-list.js"></script>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edite a sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input"/>
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+        <div id="toolbar">
+        </div>
+        <div id="todo-list">
+            <div class="todo done" draggable="true">
+                <h3>Criar minha ficha</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="todo" draggable="true">
+                <h3>Matar um dragão</h3>
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-imagem" src="/img/RedLeaf2-adp.png"  width="120" height="120">
+    </footer>
 </body>
 </html>
