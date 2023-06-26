@@ -1,39 +1,35 @@
-function time() {
-  let result = new Date() - start - pauseTime;
-  let seconds = (result * speed / 1000).toFixed(2);
-  return seconds;
+const timer = document.getElementById("timer");
+const chrono = {
+  total: 0,
+  lastStart: null,
+  loop: null,
+  getTime: function () {
+    if (this.lastStart)
+      return new Date() - this.lastStart + this.total;
+    return this.total;
+  },
+  getTimeText: function () {
+    const total_seconds = this.getTime() / 1000;
+    const minutes = parseInt(seconds / 60);
+    return `${minutes}:${seconds.toFixed(2)}`;
+  },
+  play: function (action, delay) {
+    this.lastStart = new Date();
+    this.loop = window.setInterval(action, delay);
+  },
+  pause: function () {
+    this.total = this.getTime();
+    this.lastStart = null;
+    window.clearInterval(this.loop);
+  },
+  reset: function () {
+    this.total = 0;
+    this.lastStart = null;
+    window.clearInterval(this.loop);
+  },
+};
+
+function play() {
+  chrono.pause();
+  chrono.play(() => timer.innerHTML = chrono.getTimeText());
 }
-
-
-function toogleSpeed() {
-  const list = [.1, .5, 1, 2];
-  const next = (list.indexOf(speed) + 1) % list.length;
-  speed = list[next];
-  speedButton.innerHTML = speed + "x";
-}
-
-
-function tooglePause() {
-  const now = new Date();
-  if (pauseStart) {
-    pauseTime += (now - pauseStart);
-    interval = window.setInterval(() => clock.innerHTML = time());  // FEIO
-  } else {
-    window.clearInterval(interval);
-  }
-  pauseStart = pauseStart ? null : now;
-  pauseButton.innerHTML = pauseStart ? "paused" : "running";
-}
-
-
-let clock = document.getElementById("clock");
-let speedButton = document.getElementById("speed");
-let pauseButton = document.getElementById("pause");
-
-let start = new Date();
-let pauseStart = null;
-let pauseTime = 0;
-let speed = 1;
-
-let interval = window.setInterval(() => clock.innerHTML = time(), 45);
-
