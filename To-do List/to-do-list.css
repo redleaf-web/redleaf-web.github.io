@@ -1,12 +1,209 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.cdnfonts.com/css/medievalsharp');
+* {
     margin: 0;
     padding: 0;
-    background-size: cover;
-    background-position: center;
+    font-family: medievalsharp;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-.wrapper {
-    max-width: 600px;
-    margin: 
+body {
+    background-image: url(https://rare-gallery.com/mocahbig/472013-digital-fantasy-art-castle-landscape-daylight.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.cabecalho {
+    background-color: rgb(0, 0, 0);
+    color: #dc1b2e;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+    border-bottom: 2px solid #9b3d3d;
+}
+
+.menu {
+    display:flex;
+    gap: 30px;
+}
+
+.menu-item:hover {
+    color: #ff9797;
+    text-decoration: underline;
+}
+
+.menu-item {
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+button {
+    background-color:rgb(242, 190, 190);
+    color: brown;
+    border: 2px solid brown;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(177, 20, 20);
+}
+
+button:hover > i {
+    color: rgb(255, 255, 255);
+}
+
+button i {
+    color: rgb(182, 22, 22);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, 
+select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none
+}
+
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #ffd0d0;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container h1 {
+    font-size: 40px;
+    color: #a60505;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #d45e5e;
+}
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ca5050;
+}
+
+.top-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.top-form p {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #b33737;
+}
+
+#todo-form p, #edit-form p {
+    font-weight: bold;
+    border-bottom: 0.5rem;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #9b3d3d;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: .5rem;
+}
+
+#search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #c54848;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: rgb(226, 122, 122);
+}
+
+.done h3{
+    color: #fdfdfd;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.rodape {
+    background-color:#2F2325;
+    border-top: 0.4px solid #dc1b2e;
+}
+
+.rodape-imagem {
+    display: block;
+    margin: 0 auto;
 }
