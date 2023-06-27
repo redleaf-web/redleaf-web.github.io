@@ -42,6 +42,28 @@ main section {
 }
 section h1 {
     text-transform: uppercase;
+    color: white;
+}
+.carousel {
+    position: absolute;
+    top: 0;
+    margin: 5% 10%;
+    overflow: hidden;
+}
+.carousel .container {
+    position: relative;
+    height: 150px;
+    animation: rotate 9s ease-in-out infinite;
+}
+.carousel .container .item {
+    height: 200px;
+}
+@keyframes rotate {
+    0%,100% { transform: translateY(0px); }
+    33% { transform: translateY(-200px); }
+    66% { transform: translateY(-400px);}
+    0%,33%,66%,100% { opacity: 1; }
+    15%,49%,75%,88% { opacity: 0; }
 }
 #s1 { position: relative; }
 #s2 { background-image: url('img/darjeeling_limited_dark.webp'); }
