@@ -68,13 +68,12 @@ section h1 {
 }
 .flex-container {
     display: flex;
-    width: 80%;
+    width: 85%;
     height: 100vh;
-    margin: 0 auto;
+    margin-left: 10%;
     justify-content: space-between;
     align-items: center;
-    gap: 30%;
 }
 #s1 { position: relative; }
-#s2 { background-image: url('img/darjeeling_limited_dark.webp'); }
+#s2 { background-image: url('img/darjeeling_limited_dark.webp'); background-attachment: fixed; }
 #s5 { background-image: url('img/grand_budapest_hotel_dark.webp'); }
