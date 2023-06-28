@@ -81,6 +81,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 2px;
+    border-bottom: 1px solid rgb(255, 140, 140);
 }
 
 .menu {
@@ -135,6 +136,25 @@ body {
    
 }
 
+.row h1{
+    color: #740000;
+}
+
+.dark .row h1{
+    color: #ffc5c5;
+}
+
+.meio {
+    background-color: #ffe7e7;
+    border: 1px solid #ffe7e7;
+    padding-left: 380px;
+}
+
+.dark .meio {
+    background-color: #400000;
+    border: 1px solid #400000;
+}
+
 .last-news {
     padding-top: 80px;
     background-color: #ffe7e7;
@@ -146,6 +166,14 @@ body {
     padding-top: 80px;
     background-color: #400000;
     padding-bottom: 100px;
+}
+
+.dark .last-news h5 {
+    color: #ffc0c0;
+}
+
+.dark .last-news p {
+    color: #ffc0c0;
 }
 
 .dark .card-body {
@@ -289,4 +317,8 @@ footer {
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+.not-meio {
+    background-color: #171717;
 }
