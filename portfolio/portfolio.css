@@ -136,6 +136,7 @@ body {
 
   .imagem4 {
     border: 4px solid #000000;
+    object-fit: contain;
   }
 
   .flex2 {
