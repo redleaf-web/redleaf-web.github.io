@@ -252,6 +252,9 @@ footer a {
     border: 1px solid #C8C8C8;
     margin: 0;
 }
+.get-started input:focus {
+    outline: none;
+}
 .get-started button {
     color: white;
     background-color: #001AAF;
