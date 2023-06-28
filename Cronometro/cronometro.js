@@ -6,6 +6,12 @@ const pauseBtn = document.querySelector("#pauseBtn")
 const resumeBtn = document.querySelector("#resumeBtn")
 const resetBtn = document.querySelector("#resetBtn")
 
+const chk = document.querySelector("#chk")
+
+chk.addEventListener("change", function() {
+    document.body.classList.toggle('dark')
+})
+
 let interval;
 let minutes = 0;
 let seconds = 0;
