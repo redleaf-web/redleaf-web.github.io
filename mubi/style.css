@@ -47,14 +47,15 @@ section h1 {
 }
 .carousel {
     position: absolute;
-    top: 0;
-    margin: 5% 10%;
+    top: 20%;
+    padding-top: 50px;
+    margin: 0 10%;
     overflow: hidden;
 }
 .carousel .container {
     position: relative;
     height: 150px;
-    animation: rotate 9s ease-in-out infinite;
+    animation: rotate 12s ease-in-out infinite;
 }
 .carousel .container .item {
     height: 200px;
@@ -66,7 +67,7 @@ section h1 {
     0%,33%,66%,100% { opacity: 1; }
     15%,49%,75%,88% { opacity: 0; }
 }
-#s1 { position: relative; }
+#s1 { position: relative; overflow: hidden; }
 #s1 .get-started {
     position: absolute;
     top: 70%;
@@ -160,7 +161,7 @@ section h1 {
     width: 80%;
 }
 #s6 {
-    height: 90vh;
+    height: 70vh;
 }
 #s6 h1 {
     color: #323232;
