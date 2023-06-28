@@ -43,6 +43,7 @@ main section {
 section h1 {
     text-transform: uppercase;
     color: white;
+    font-weight: bold;
 }
 .carousel {
     position: absolute;
@@ -64,6 +65,15 @@ section h1 {
     66% { transform: translateY(-400px);}
     0%,33%,66%,100% { opacity: 1; }
     15%,49%,75%,88% { opacity: 0; }
+}
+.flex-container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30%;
 }
 #s1 { position: relative; }
 #s2 { background-image: url('img/darjeeling_limited_dark.webp'); }
