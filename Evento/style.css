@@ -1,4 +1,4 @@
-import url('https://fonts.cdnfonts.com/css/medievalsharp');
+@import url('https://fonts.cdnfonts.com/css/medievalsharp');
 * {
     margin: 0;
     padding: 0;
@@ -41,13 +41,16 @@ header {
   }  
 
   .conteudo-principal {
-    
+    background-color: #a60505;
+  }
+
+  .row h5, p{
+    color: #000000;
   }
 
   .about {
     background-image: linear-gradient(black, #a60505);
     color: #fff;
-    border-bottom: 1px solid white;
   }
   .schedule {
     background-image: linear-gradient(#a60505, black);
