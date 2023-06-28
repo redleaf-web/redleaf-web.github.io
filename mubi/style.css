@@ -60,6 +60,10 @@ section h1 {
 .carousel .container .item {
     height: 200px;
 }
+.carousel .item h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
 @keyframes rotate {
     0%,100% { transform: translateY(0px); }
     33% { transform: translateY(-200px); }
