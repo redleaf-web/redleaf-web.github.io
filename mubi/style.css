@@ -154,7 +154,7 @@ section h1 {
 #s6 h1 {
     color: #323232;
     width: 70%;
-    margin: 5% auto;
+    margin: 5% auto 3%;
     font-size: 24px;
 }
 footer {
@@ -168,4 +168,38 @@ footer {
 }
 footer a {
     color: #001489;
+}
+.get-started {
+    margin-left: 15%;
+}
+.get-started h3 {
+    font-weight: bold;
+    font-size: 26px;
+}
+.get-started .input-container {
+    display: flex;
+    height: 70px;
+}
+.get-started input {
+    padding: 21px 16px;
+    width: 400px;
+    border: 1px solid #C8C8C8;
+    margin: 0;
+}
+.get-started button {
+    color: white;
+    background-color: #001AAF;
+    border-color: #001AAF;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 13px 25px;
+    height: 100%;
+}
+.get-started button:hover {
+    background-color: #011ec4;
+    border-color: #011ec4;
+}
+.get-started span {
+    font-size: 12px;
+    padding-top: 26px;
 }
