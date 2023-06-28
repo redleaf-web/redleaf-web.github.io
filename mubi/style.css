@@ -66,7 +66,7 @@ section h1 {
     0%,33%,66%,100% { opacity: 1; }
     15%,49%,75%,88% { opacity: 0; }
 }
-.flex-container {
+#s2 .flex-container {
     display: flex;
     width: 85%;
     height: 100vh;
@@ -74,6 +74,28 @@ section h1 {
     justify-content: space-between;
     align-items: center;
 }
+#s3 .flex-container {
+    display: flex;
+    margin: 5% auto;
+    width: 50%;
+    justify-content: center;
+}
+#s3 .logo-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+#s3 .mubi-logo {
+    width: 50%;
+}
+#s3 .text {
+    width: 50%;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: bold;
+    font-size: 16px;
+}
 #s1 { position: relative; }
 #s2 { background-image: url('img/darjeeling_limited_dark.webp'); background-attachment: fixed; }
+#s4 h1 { color: black; }
 #s5 { background-image: url('img/grand_budapest_hotel_dark.webp'); }
