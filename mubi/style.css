@@ -142,6 +142,24 @@ section h1 {
     font-weight: bold;
     font-size: 16px;
 }
+#s3 {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+#s3 .slideshow {
+    text-align: center;
+}
+.menu {
+    animation: anim-menu 2s;
+}
+#m12 { animation-delay: .1s; }
+#m13 { animation-delay: .2s; }
+@keyframes anim-menu {
+    0% { transform: translateY(300%); }
+    100% { transform: translateY(0); }
+}
 #s4 {
     background-color: #eaeaea;
     height: 100%;
