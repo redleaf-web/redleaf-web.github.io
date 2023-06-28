@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaf Con - Evento RedLeaf</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="evento-style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
@@ -13,27 +13,21 @@
 <body>
   
   <header>
-    <h1>Leaf Con</h1>
-    <nav>
-      <ul>
-        <h5 class="menu1"><a href="#about">Sobre o Evento</a></h5>
-        <h5 class="menu2"><a href="#schedule">Programação</a></h5>
-        <h5 class="menu3"><a href="#speakers">Palestrantes</a></h5>
-        <h5 class="menu3"><a href="#service">Credenciais</a></h5>
-        <h5 class="menu3"><a href="#contact">Contato</a></h5>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="hero" class="jumbotron jumbotron-fluid">
     <div class="container text-center">
-      <h1 class="display-4">Leaf Con</h1>
+      <h1 class="display-4"><strong>Leaf Con</strong></h1>
       <p class="lead">O maior evento de RPG da América Latina</p>
-    </div>
-
-    <p id="demo"></p>
-
-  </section>
+      <p class="display-4" id="demo"></p>
+      <nav>
+        <ul>
+          <h5 class="menu1"><a href="#about">Sobre o Evento</a></h5>
+          <h5 class="menu2"><a href="#schedule">Programação</a></h5>
+          <h5 class="menu3"><a href="#speakers">Palestrantes</a></h5>
+          <h5 class="menu3"><a href="#service">Credenciais</a></h5>
+          <h5 class="menu3"><a href="#contact">Contato</a></h5>
+        </ul>
+      </nav>
+  </div>
+  </header>
   
   <script>
     // Set the date we're counting down to
@@ -66,168 +60,178 @@
     }, 1000);
   </script>
     
-
-  <section id="about" class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2 class="display-4">Sobre o Evento</h2>
-          <p>Criada em 2006, Leaf Con é um marco na história dos RPGs de mesa. Um evento destinado aos nossos maiores fãs, onde todos podem se reunir e aproveitar uma vasta gama de Paineis, Palestras, Concursos de Cosplays, e muito mais. </p>
-        </div>
-        <div class="col-lg-6">
-          <img src="LeafCon.png" class="img-fluid" alt="Imagem do Evento">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="schedule" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="display-4 text-center">Programação</h2>
-      <p class="lead text-center">Confira a programação completa do evento</p>
-
-      <div class="row">
-        <div class="col-md-6">
-          <h3>"Meet e Greet" com convidados</h3>
-          <p>Quinta-Feira, das 10:00 às 12:00</p>
-          <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
-        </div>
-        <div class="col-md-6">
-          <h3>Concurso de Cosplays</h3>
-          <p>Quinta-Feira, das 13:00 às 15:00</p>
-          <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
-        </div>
-        <div class="col-md-6">
-          <h3>Palestras </h3>
-          <p>Sexta-Feira, das 10:00 às 14:00</p>
-          <p>Descrição: Quatro palestras reunindo quatro dos mais icónicos escritores e desenvolvedores da RedLeaf.</p>
-        </div>
-        <div class="col-md-6">
-          <h3>Painel</h3>
-          <p>Sábado, das 15:00 às 16:30</p>
-          <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="speakers" class="py-5">
-    <div class="container">
-      <h2 class="display-4 text-center">Palestrantes</h2>
-      <p class="lead text-center">Conheça nossos palestrantes</p>
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="Hélio.jpg" class="card-img-top" alt="Imagem do Palestrante">
-            <div class="card-body">
-              <h5 class="card-title">Hélio Holanda Duarte</h5>
-              <p class="card-text">Hélio é um dos escritores e desenvolvedores Sêniors da RedLeaf, já escreveu campanhas icônicas como "O Rei Congelado" e é responsável pela criação de personagens memoráveis, como Lyra Sandstorm e Valarian Cerenaith.</p>
+<main class = "conteudo-principal">
+  <div class="parallax">
+    <div class = "about">
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="display-4">Sobre o Evento</h2>
+              <p>Criada em 2006, A Leaf Con é um marco na história dos RPGs de mesa. Um evento destinado aos nossos maiores fãs, onde todos podem se reunir e aproveitar uma vasta gama de Paineis, Palestras, Concursos de Cosplays, e muito mais. </p>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="erick.jpg" class="card-img-top" alt="Imagem do Palestrante">
-            <div class="card-body">
-              <h5 class="card-title">Erick Carneiro de Oliveira Rocha</h5>
-              <p class="card-text">QA Tester, tradutor de Inglês com 10 anos de alta flûencia, e assistente geral nos processos de desenvolvimento Redleaf.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <img src="speaker3.jpg" class="card-img-top" alt="Imagem do Palestrante">
-            <div class="card-body">
-              <h5 class="card-title">Nome do Palestrante 3</h5>
-              <p class="card-text">Descrição do palestrante e suas especialidades.</p>
+            <div class="col-lg-6">
+              <img src="LeafCon.png" class="img-fluid" alt="Imagem do Evento">
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      </section>
+      <section id="schedule" class="py-5 bg-light">
+        <div class = "schedule">
+        <div class="container">
+          <h2 class="display-4 text-center">Programação</h2>
+          <p class="lead text-center">Confira a programação completa do evento</p>
 
-  <section class="service" id="service">
-    <div class="main-text">
-        <h2>Selecione sua credencial de acesso:</h2>
-    </div>
-
-    <div class="services-content">
-        <div class="box">
-            <div class="s-icons"> 
-            <i class='bx bx-credit-card'></i>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>"Meet e Greet" com convidados</h3>
+              <p>Quinta-Feira, das 10:00 às 12:00</p>
+              <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
             </div>
+            <div class="col-md-6">
+              <h3>Concurso de Cosplays</h3>
+              <p>Quinta-Feira, das 13:00 às 15:00</p>
+              <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
+            </div>
+            <div class="col-md-6">
+              <h3>Palestras </h3>
+              <p>Sexta-Feira, das 10:00 às 14:00</p>
+              <p>Descrição: Quatro palestras reunindo quatro dos mais icónicos escritores e desenvolvedores da RedLeaf.</p>
+            </div>
+            <div class="col-md-6">
+              <h3>Painel</h3>
+              <p>Sábado, das 15:00 às 16:30</p>
+              <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 
-            <h3>Quinta-Feira </h3>
-            <p>Inteira: R$ 360,00</p>
-            <P>Meia: R$ 180,00</P>
-            <a href="#contact" class="read">Compre!</a>
+      <section id="speakers" class="py-5">
+      <div class = "speakers">
+        <div class="container">
+          <h2 class="display-4 text-center">Palestrantes</h2>
+          <p class="lead text-center">Conheça nossos palestrantes</p>
 
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <img src="Hélio.jpg" class="card-img-top" alt="Imagem do Palestrante">
+                <div class="card-body">
+                  <h5 class="card-title">Hélio Holanda Duarte</h5>
+                  <p class="card-text">Hélio é um dos escritores e desenvolvedores Sêniors da RedLeaf, já escreveu campanhas icônicas como "O Rei Congelado" e é responsável pela criação de personagens memoráveis, como Lyra Sandstorm e Valarian Cerenaith.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <img src="erick.jpg" class="card-img-top" alt="Imagem do Palestrante">
+                <div class="card-body">
+                  <h5 class="card-title">Erick Carneiro de Oliveira Rocha</h5>
+                  <p class="card-text">QA Tester, tradutor de Inglês com 10 anos de alta flûencia, e assistente geral nos processos de desenvolvimento Redleaf.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4">
+                <img src="speaker3.jpg" class="card-img-top" alt="Imagem do Palestrante">
+                <div class="card-body">
+                  <h5 class="card-title">Nome do Palestrante 3</h5>
+                  <p class="card-text">Descrição do palestrante e suas especialidades.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="service" id="service">
+        <div class = "service">
+        <div class="main-text">
+            <h2>Selecione sua credencial de acesso:</h2>
         </div>
 
-        <div class="box">
-            <div class="s-icons"> 
-                <i class='bx bx-money'></i>
-            </div>
-
-            <h3>Sexta-Feira</h3>
-            <p>Inteira: R$ 400,00</p>
-            <p>Meia: R$ 200,00</p>
-            <a href="#contact" class="read">Compre!</a>
-
-        </div>
-
-        <div class="box">
-            <div class="s-icons"> 
+        <div class="services-content">
+            <div class="box">
+                <div class="s-icons"> 
                 <i class='bx bx-credit-card'></i>
+                </div>
+
+                <h3>Quinta-Feira </h3>
+                <p>Inteira: R$ 360,00</p>
+                <P>Meia: R$ 180,00</P>
+                <a href="#contact" class="read">Compre!</a>
+
             </div>
 
-            <h3>Sábado</h3>
-            <p>Inteira: R$520,00</p>
-            <p>Meia: R$ 260,00</p>
-            <a href="#contact" class="read">Compre!</a>
+            <div class="box">
+                <div class="s-icons"> 
+                    <i class='bx bx-money'></i>
+                </div>
 
-        </div>
+                <h3>Sexta-Feira</h3>
+                <p>Inteira: R$ 400,00</p>
+                <p>Meia: R$ 200,00</p>
+                <a href="#contact" class="read">Compre!</a>
 
-        <div class="box">
-          <div class="s-icons"> 
-              <i class='bx bx-credit-card'></i>
+            </div>
+
+            <div class="box">
+                <div class="s-icons"> 
+                    <i class='bx bx-credit-card'></i>
+                </div>
+
+                <h3>Sábado</h3>
+                <p>Inteira: R$520,00</p>
+                <p>Meia: R$ 260,00</p>
+                <a href="#contact" class="read">Compre!</a>
+
+            </div>
+
+            <div class="box">
+              <div class="s-icons"> 
+                  <i class='bx bx-credit-card'></i>
+              </div>
+
+              <h3>Pacote 3 Dias</h3>
+              <p>Inteira: R$1.620,00</p>
+              <p>Meia: R$ 810,00</p>
+              <a href="#contact" class="read">Compre!</a>
+
           </div>
 
-          <h3>Pacote 3 Dias</h3>
-          <p>Inteira: R$1.620,00</p>
-          <p>Meia: R$ 810,00</p>
-          <a href="#contact" class="read">Compre!</a>
+      <section id="contact" class="py-5 bg-light">
+        <div class="contact">
+          <h2 class="display-4 text-center">Contato</h2>
+          <p class="lead text-center">Entre em contato para garantir suas credenciais</p>
 
-      </div>
-
-  <section id="contact" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="display-4 text-center">Contato</h2>
-      <p class="lead text-center">Entre em contato para garantir suas credenciais</p>
-
-      <div class="row">
-        <div class="col-md-6 offset-md-3">
-          <form>
-            <div class="form-group">
-              <label for="name">Nome</label>
-              <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nome</label>
+                  <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Mensagem</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-            </div>
-            <div class="form-group">
-              <label for="message">Mensagem</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Digite sua mensagem"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+          </div>
         </div>
-      </div>
     </div>
+</div>
   </section>
+</main>
 
   <footer class="rodape">
     <div id="footer-content">
