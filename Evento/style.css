@@ -41,11 +41,12 @@ header {
   }  
 
   .conteudo-principal {
-    background-color: #a60505;
+    background-color: #7b5757;
+    color: #dc1b2e;
   }
 
-  .row h5, p{
-    color: #000000;
+  .col-md-4 {
+    color: #0c0c0c;
   }
 
   .about {
