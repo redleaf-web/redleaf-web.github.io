@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/medievalsharp');
+import url('https://fonts.cdnfonts.com/css/medievalsharp');
 * {
     margin: 0;
     padding: 0;
@@ -10,41 +10,59 @@
 header {
     background-color: rgb(0, 0, 0);
     color: #dc1b2e;
-    padding: 10px;
+    padding: 100px;
   }
 
-  .sobre-div {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 560px;
-  }
-
-  .sobre {
-    border-top: 3px solid #d13434;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.sobre-titulo {
-  font-size: 30px;
-}
-
-.projetos {
-    background: linear-gradient(270deg, #d25353 0%, #810a0a 90%);
-    background-color: #c23535;
-    padding: 20px;
-    border-top: 3px solid #6c0a1a;
-    padding-top: 40px;
-  }
-
-  .titulo {
-    font-size: 30px;
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: center;  
   }
 
+  .menu1 {
+    padding-right: 20px;
+  }
+
+  .menu3 {
+    padding-left: 20px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }  
+
+  .conteudo-principal {
+    
+  }
+
+  .about {
+    background-image: linear-gradient(black, #a60505);
+    color: #fff;
+    border-bottom: 1px solid white;
+  }
+  .schedule {
+    background-image: linear-gradient(#a60505, black);
+    color: #fff;
+  }
+
+  .speakers {
+    background-image: linear-gradient(black, #a60505);
+    color: #fff;
+  }
+
+  .service {
+    background-image: linear-gradient(#a60505, black);
+    color: #fff;
+  }
 
 :root {
     --color-neutral-0: #0c0c0c;
