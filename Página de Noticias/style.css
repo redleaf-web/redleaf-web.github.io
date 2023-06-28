@@ -1,0 +1,253 @@
+@import url("https://fonts.cdnfonts.com/css/medievalsharp");
+*{
+    font-family: medievalsharp;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --color-neutral-0: #0c0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: medievalsharp;
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: rgb(134, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.25);
+}
+
+.label .ball {
+    background-color: #ffcece;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.cabecalho {
+    background-color: rgb(0, 0, 0);
+    color: #dc1b2e;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+}
+
+.menu {
+    display:flex;
+    gap: 30px;
+}
+
+.menu-item:hover {
+    color: #ff9797;
+    text-decoration: underline;
+}
+
+.menu-item {
+    color: inherit;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 40px;
+}
+
+.tittle-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 280px;
+    background-color: #e78484;
+    border: 1px solid black;
+}
+
+.tittle-container h1{
+    color: #5a0000;
+    font-size: 3rem;
+}
+
+.last-news {
+    padding-top: 80px;
+    background-color: #ffe7e7;
+    padding-bottom: 100px;
+}
+
+.saiba {
+    padding: 10px;
+    background-color: #ff0019;
+    border: 1px solid #0c0c0c;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+footer {
+    border-top: 1px solid #a60505;
+    width: 100%;
+    color: rgb(215, 99, 99);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer-content {
+    background-color: #2F2325;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer-social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer-social-media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer-social-media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+    background-color: #4267b3;
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: rgb(226, 196, 196);
+    transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+    color: #c93737
+}
+
+#footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-subscribe p{
+    color: rgb(238, 202, 202);
+}
+
+#input-group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(195, 121, 121);
+    border-radius: 4px;
+}
+
+#input-group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input-group button {
+    background-color: #c93737;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.25rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input-group button:hover {
+    opacity: 0.8;
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(34, 19, 19);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}

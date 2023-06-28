@@ -4,75 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>RedLeaf Nexus</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">RedLeaf Nexus</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Notícias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
-          </li>
-        </ul>
+    <reader class="cabecalho">
+      <img class="imagem" src="/img/RedLeaf-black.png" width="140" height="140">
+      <nav class="menu">
+        <a class="menu-item" href="/homepage"> Página principal</a>
+        <a class="menu-item" href="/portfolio">Sobre os criadores</a>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk">
+  
+          <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+          </label>
       </div>
-    </nav>
-  </header>
+      </nav>
+    </reader>
+ 
 
-  <section id="hero" class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-      <h1 class="display-4">RedLeaf Nexus</h1>
+  <div class="tittle-container">
+      <h1 class="tittle">RedLeaf Nexus</h1>
       <p class="lead">Noticias Oficiais da RedLeaf</p>
     </div>
-  </section>
 
-  <section id="latest-news" class="py-5">
+  <section id="latest-news" class="last-news">
     <div class="container">
       <h2 class="mb-4">Últimas Notícias</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4">
-            <img src="rise_of_the_dragon_master_screen_by_charro_art_dcawkhi-fullview.jpg" class="card-img-top" alt="Imagem da Notícia">
+            <img src="imgs/rise_of_the_dragon_master_screen_by_charro_art_dcawkhi-fullview.jpg" class="card-img-top" alt="Imagem da Notícia">
             <div class="card-body">
               <h5 class="card-title">Nova campanha original RedLeaf transporta jogadores para a épica batalha contra o temido "Demônio de Dragongard".</h5>
               <p class="card-text">"No castelo de Dragongard, um conto de coragem, desafio e perigo está prestes a ser desvendado com o lançamento da nova campanha de RPG original RedLeaf intitulada 'O Demônio de Dragongard'...".</p>
-              <a href="noticia-dragao.html" class="btn btn-primary">Leia Mais</a>
+              <a href="noticia-dragao.html" class="saiba">Leia Mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card mb-4">
-            <img src="dungeons-and-dragons-cast.jpg" class="card-img-top" alt="Imagem da Notícia">
+            <img src="imgs/dungeons-and-dragons-cast.jpg" class="card-img-top" alt="Imagem da Notícia">
             <div class="card-body">
               <h5 class="card-title">Elenco de 'Dungeons and Dragons: Honra entre Rebeldes' confirmado para participar do Leaf Con em evento épico de fantasia</h5>
               <p class="card-text">"A tão esperada convenção de cultura geek, conhecida como Leaf Con, está prestes a ganhar um toque de magia e aventura com a presença do elenco do próximo sucesso cinematográfico 'Dungeons and Dragons: Honra entre Rebeldes'...".</p>
-              <a href="noticia-dnd.html" class="btn btn-primary">Leia Mais</a>
+              <a href="noticia-dnd.html" class="saiba">Leia Mais</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card mb-4">
-            <img src="seamless-minimalistic-horizontal-vector-illustration-cyberpunk-futuristic-cityscape-silhouette-simple-one-line-style-glowing-196326551.webp" class="card-img-top" alt="Imagem da Notícia">
+            <img src="imgs/seamless-minimalistic-horizontal-vector-illustration-cyberpunk-futuristic-cityscape-silhouette-simple-one-line-style-glowing-196326551.webp" class="card-img-top" alt="Imagem da Notícia">
             <div class="card-body">
               <h5 class="card-title">RedLeaf expande sua plataforma de RPG de mesa online com cenário 'Cyberpunk' em desenvolvimento</h5>
               <p class="card-text">"A RedLeaf, renomada empresa especializada em sistemas e campanhas de RPG de mesa online, está pronta para levar os jogadores a um novo nível de aventura com o desenvolvimento de um novo cenário com temática 'Cyberpunk'.".</p>
-              <a href="noticia-cyberpunk.html" class="btn btn-primary">Leia Mais</a>
+              <a href="noticia-cyberpunk.html" class="saiba">Leia Mais</a>
             </div>
           </div>
         </div>
@@ -80,9 +74,71 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2023 RedLeaf - Todos os direitos reservados</p>
-  </footer>
+  <footer class="rodape">
+    <div id="footer-content">
+        <div class="footer-contacts">
+          <img class="rodape-imagem" src="/img/RedLeaf3-adp.png"  width="120" height="120">
+            <h5>Todos os seus sonhos em um só lugar.</h5>
+            <div id="footer-social-media">
+            <a href="#" class="footer-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+             </a>
+             <a href="#" class="footer-link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+             </a>
+            </div>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Blog</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog1</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog2</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog3</a>
+            </li>
+            </ul>
+        <ul class="footer-list">
+            <li>
+                <h3>Campanhas</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Campanha1</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Campanha2</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Campanha3</a>
+            </li>
+        </ul>
+        <div id="footer-subscribe">
+            <h3>Inscrever-se</h3>
+
+            <p>
+            Coloque seu e-mail para ser notificado sobre atualizações
+            </p>
+
+            <div id="input-group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>    
+
+    <div id="footer-copyright">
+        &#169
+        2023 all rights reserved
+    </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
