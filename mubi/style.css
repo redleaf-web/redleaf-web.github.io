@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 80vw;
+    height: 50px;
+    margin: 12px auto 0;
+    color: white;
+}
+header .right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.right > * {
+    color: white;
+    font-size: 12px;
+}
+.bi-list {
+    font-size: 24px;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+main section {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+section h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.carousel {
+    position: absolute;
+    top: 20%;
+    padding-top: 50px;
+    margin: 0 10%;
+    overflow: hidden;
+}
+.carousel .container {
+    position: relative;
+    height: 150px;
+    animation: rotate 12s ease-in-out infinite;
+}
+.carousel .container .item {
+    height: 200px;
+}
+.carousel .item h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+@keyframes rotate {
+    0%,100% { transform: translateY(0px); }
+    33% { transform: translateY(-200px); }
+    66% { transform: translateY(-400px);}
+    0%,33%,66%,100% { opacity: 1; }
+    15%,49%,75%,88% { opacity: 0; }
+}
+.slider {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    right: 44px;
+    gap: 10px;
+}
+.dot {
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;    
+    border-radius: 50%;
+}
+.one { animation: one 12s ease-in-out infinite;}
+@keyframes one {
+    0%,100% { opacity: 1; }
+    15%,49%,75%,88%,
+    33%,66% { opacity: .3; }
+}
+.two { animation: two 12s ease-in-out infinite;}
+@keyframes two {
+    33% { opacity: 1; }
+    15%,49%,75%,88%,
+    0%,66%,100% { opacity: .3; }
+}
+.three { animation: three 12s ease-in-out infinite;}
+@keyframes three {
+    66% { opacity: 1; }
+    15%,49%,75%,88%,
+    0%,33%,100% { opacity: .3; }
+}
+#s1 { position: relative; overflow: hidden; }
+#s1 .get-started {
+    position: absolute;
+    top: 70%;
+}
+#s1 .get-started,
+#s1 .get-started a {
+    color: white;
+}
+#s2 { background-image: url('img/darjeeling_limited_dark.webp'); background-attachment: fixed; }
+#s2 .flex-container {
+    display: flex;
+    width: 85%;
+    height: 100vh;
+    margin-left: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+#s3 .flex-container {
+    display: flex;
+    margin: 5% auto;
+    width: 50%;
+    justify-content: center;
+}
+#s3 .logo-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+#s3 .mubi-logo {
+    width: 50%;
+}
+#s3 .text {
+    width: 50%;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: bold;
+    font-size: 16px;
+}
+#s3 {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 25px;
+    margin-bottom: 50px;
+}
+#s3 .slideshow {
+    text-align: center;
+}
+.menu {
+    animation: anim-menu 2s;
+}
+#m12 { animation-delay: .1s; }
+#m13 { animation-delay: .2s; }
+@keyframes anim-menu {
+    0% { transform: translateY(300%); }
+    100% { transform: translateY(0); }
+}
+#s4 {
+    background-color: #eaeaea;
+    height: 100%;
+}
+#s4 .row {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+#s4 .photo {
+    width: 55%;
+    height: 100%;
+    object-fit: contain;
+}
+#s4 .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 45%;
+    height: 80%;
+    gap: 15px;
+}
+#s4 .notebook-container {
+    width: 180px;
+}
+#s4 .column h1 {
+    color: #323232;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 32px;
+}
+#s4 .description {
+    color: #666666;
+}
+#s4 #more {
+    color: #323232;
+    text-decoration: none;
+    font-weight: bold;
+}
+#s4 #more:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+#s5 { background-image: url('img/grand_budapest_hotel_dark.webp') }
+#s5 h1 {
+    position: relative;
+    top: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1;
+    width: 80%;
+}
+#s6 {
+    height: 70vh;
+}
+#s6 h1 {
+    color: #323232;
+    width: 80%;
+    margin: 5% auto 3%;
+    font-size: 24px;
+}
+footer {
+    color: #7d7d7d;
+    font-size: 10px;
+    font-weight: bold;
+}
+footer {
+    width: 80%;
+    margin: 0 auto 25px;
+}
+footer a {
+    color: #001489;
+}
+.get-started {
+    margin-left: 10%;
+}
+.get-started h3 {
+    font-weight: bold;
+    font-size: 26px;
+}
+.get-started .input-container {
+    display: flex;
+    height: 70px;
+}
+.get-started input {
+    padding: 21px 16px;
+    width: 400px;
+    border: 1px solid #C8C8C8;
+    margin: 0;
+}
+.get-started input:focus {
+    outline: none;
+}
+.get-started button {
+    color: white;
+    background-color: #001AAF;
+    border-color: #001AAF;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 13px 25px;
+    height: 100%;
+}
+.get-started button:hover {
+    background-color: #011ec4;
+    border-color: #011ec4;
+}
+.get-started span {
+    font-size: 12px;
+    padding-top: 26px;
+}
