@@ -97,7 +97,10 @@ section h1 {
     font-weight: bold;
     font-size: 16px;
 }
-#s4 { background-color: #eaeaea; }
+#s4 {
+    background-color: #eaeaea;
+    height: 100%;
+}
 #s4 .row {
     display: flex;
     width: 80%;
