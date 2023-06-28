@@ -142,4 +142,18 @@ section h1 {
     opacity: .8;
     text-decoration: underline;
 }
-#s5 { background-image: url('img/grand_budapest_hotel_dark.webp'); }
+#s5 { background-image: url('img/grand_budapest_hotel_dark.webp'); background-attachment: fixed; }
+#s5 h1 {
+    position: relative;
+    top: 80%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1;
+    width: 80%;
+}
+#s6 h1 {
+    color: #323232;
+    width: 70%;
+    margin: 5% auto;
+    font-size: 24px;
+}
