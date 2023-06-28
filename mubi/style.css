@@ -67,6 +67,38 @@ section h1 {
     0%,33%,66%,100% { opacity: 1; }
     15%,49%,75%,88% { opacity: 0; }
 }
+.slider {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    right: 44px;
+    gap: 10px;
+}
+.dot {
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;    
+    border-radius: 50%;
+}
+.one { animation: one 12s ease-in-out infinite;}
+@keyframes one {
+    0%,100% { opacity: 1; }
+    15%,49%,75%,88%,
+    33%,66% { opacity: .3; }
+}
+.two { animation: two 12s ease-in-out infinite;}
+@keyframes two {
+    33% { opacity: 1; }
+    15%,49%,75%,88%,
+    0%,66%,100% { opacity: .3; }
+}
+.three { animation: three 12s ease-in-out infinite;}
+@keyframes three {
+    66% { opacity: 1; }
+    15%,49%,75%,88%,
+    0%,33%,100% { opacity: .3; }
+}
 #s1 { position: relative; overflow: hidden; }
 #s1 .get-started {
     position: absolute;
