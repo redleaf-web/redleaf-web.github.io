@@ -67,6 +67,14 @@ section h1 {
     15%,49%,75%,88% { opacity: 0; }
 }
 #s1 { position: relative; }
+#s1 .get-started {
+    position: absolute;
+    top: 70%;
+}
+#s1 .get-started,
+#s1 .get-started a {
+    color: white;
+}
 #s2 { background-image: url('img/darjeeling_limited_dark.webp'); background-attachment: fixed; }
 #s2 .flex-container {
     display: flex;
@@ -151,9 +159,12 @@ section h1 {
     line-height: 1;
     width: 80%;
 }
+#s6 {
+    height: 90vh;
+}
 #s6 h1 {
     color: #323232;
-    width: 70%;
+    width: 80%;
     margin: 5% auto 3%;
     font-size: 24px;
 }
@@ -170,7 +181,7 @@ footer a {
     color: #001489;
 }
 .get-started {
-    margin-left: 15%;
+    margin-left: 10%;
 }
 .get-started h3 {
     font-weight: bold;
