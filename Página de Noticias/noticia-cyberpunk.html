@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova campanha de RPG de mesa</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+  <header>
     <header class="cabecalho">
-        <img class="imagem" src="/img/RedLeaf-black.png" width="90" height="90">
-        <nav class="menu">
-          <a class="menu-item" href="/homepage">Página principal</a>
-          <a class="menu-item" href="/portfolio">Sobre os Criadores</a>
-          <a class="menu-item" href="/login">Login</a>
-        </nav>
+      <img class="imagem" src="/img/RedLeaf-black.png" width="140" height="140">
+      <nav class="menu">
+        <a class="menu-item" href="/homepage"> Página principal</a>
+        <a class="menu-item" href="/portfolio">Sobre os criadores</a>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk">
+  
+          <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+          </label>
+      </div>
+      </nav>
     </header>
-
-    <div class="container mt-5">
+  </header>
+  
+  <main class="meio">
+    <div class="container last-news mt-5">
         <div class="row">
             <div class="col-md-8">
-                <h1>Nova campanha de RPG de mesa transporta jogadores para a épica batalha contra o temido Demônio de Dragongard</h1>
-                <img src="seamless-minimalistic-horizontal-vector-illustration-cyberpunk-futuristic-cityscape-silhouette-simple-one-line-style-glowing-196326551.webp" alt="Imagem da campanha" class="img-fluid mt-3 mb-3">
+                <h1><strong>Nova campanha de RPG de mesa transporta jogadores para a épica batalha contra o temido Demônio de Dragongard</strong></h1>
+                <img src="imgs/seamless-minimalistic-horizontal-vector-illustration-cyberpunk-futuristic-cityscape-silhouette-simple-one-line-style-glowing-196326551.webp" alt="Imagem da campanha" class="img-fluid mt-3 mb-3">
                 <p><strong>Por Hélio Holanda Duarte | 18/02/2023</strong></p>
                 <p>A RedLeaf, renomada empresa especializada em sistemas e campanhas de RPG de mesa online, está pronta para levar os jogadores a um novo nível de aventura com o desenvolvimento de um novo cenário com temática 'Cyberpunk'.</p>
                 <p>O cenário 'Cyberpunk' é ambientado em um futuro distópico, onde a tecnologia avançada se mistura com a decadência urbana, criando um ambiente sombrio e repleto de possibilidades. Os jogadores serão imersos em uma metrópole futurista, repleta de megacorporações, hackers habilidosos, implantes cibernéticos e conspirações perigosas.</p>
@@ -28,34 +42,106 @@
                 <p>A RedLeaf está empenhada em desenvolver um cenário 'Cyberpunk' autêntico, repleto de elementos característicos do gênero, como megacorporações corruptas, cidades superlotadas, neon brilhante e uma atmosfera de tensão constante. Os jogadores poderão explorar ruas sinistras, desvendar conspirações obscuras, participar de tiroteios eletrizantes e interagir com uma variedade de personagens fascinantes e ambíguos.</p>
                 <p>Além disso, a RedLeaf está trabalhando em ferramentas inovadoras e recursos online para oferecer uma experiência de jogo ainda mais imersiva aos participantes. O cenário 'Cyberpunk' permitirá que os jogadores explorem a cidade virtualmente, interajam com outros jogadores em tempo real e desfrutem de uma jogabilidade envolvente e dinâmica.</p>
                 <p>Com o novo cenário 'Cyberpunk', a RedLeaf reafirma seu compromisso em fornecer aos jogadores uma ampla gama de experiências de RPG de mesa online, levando-os a mundos imaginários ricos e cativantes. Prepare-se para mergulhar em uma realidade alternativa distópica, onde a tecnologia e a luta pela liberdade se entrelaçam, e embarque em uma jornada emocionante no cenário 'Cyberpunk' da RedLeaf.</p>
-                <p><strong>Veja mais:</strong></p>
-                <ul>
-                    <li>
-                      <div class="card" style="width: 18rem;">
-                        <img src="rise_of_the_dragon_master_screen_by_charro_art_dcawkhi-fullview.jpg" class="card-img-top" alt="Imagem da Notícia">
-                        <div class="card-body">
-                          <h5 class="card-title">Nova campanha original RedLeaf transporta jogadores para a épica batalha contra o temido "Demônio de Dragongard".</h5>
-                          <a href="noticia-dragao.html" class="btn btn-primary">Leia Mais</a>
-                        </div>
+              </div>
+
+              <section id="latest-news" class="last-news">
+              <div class="container">
+                <h2 class="mb-4">Mais notícias</h2>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="card mb-4">
+                      <img src="imgs/rise_of_the_dragon_master_screen_by_charro_art_dcawkhi-fullview.jpg" class="card-img-top" alt="Imagem da Notícia">
+                      <div class="card-body">
+                        <h5 class="card-title">Nova campanha original RedLeaf transporta jogadores para a épica batalha contra o temido "Demônio de Dragongard".</h5>
+                        <p class="card-text">"No castelo de Dragongard, um conto de coragem, desafio e perigo está prestes a ser desvendado com o lançamento da nova campanha de RPG original RedLeaf intitulada 'O Demônio de Dragongard'...".</p>
+                        <a href="noticia-dragao.html" class="saiba">Leia Mais</a>
                       </div>
-                    </li>
-                    <li>
-                        <div class="card" style="width: 18rem;">
-                          <img src="dungeons-and-dragons-cast.jpg" class="card-img-top" alt="Imagem da Notícia">
-                          <div class="card-body">
-                            <h5 class="card-title">Elenco de 'Dungeons and Dragons: Honra entre Rebeldes' confirmado para participar da Leaf Con em evento épico de fantasia</h5>
-                            <a href="noticia-dnd.html" class="btn btn-primary">Leia Mais</a>
-                          </div>
-                        </div>
-                      </li>
-                  </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card mb-4">
+                      <img src="imgs/dungeons-and-dragons-cast.jpg" class="card-img-top" alt="Imagem da Notícia">
+                      <div class="card-body">
+                        <h5 class="card-title">Elenco de 'Dungeons and Dragons: Honra entre Rebeldes' confirmado para participar do Leaf Con em evento épico de fantasia</h5>
+                        <p class="card-text">"A tão esperada convenção de cultura geek, conhecida como Leaf Con, está prestes a ganhar um toque de magia e aventura com a presença do elenco do próximo sucesso cinematográfico 'Dungeons and Dragons: Honra entre Rebeldes'...".</p>
+                        <a href="noticia-dnd.html" class="saiba">Leia Mais</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
                   
             </div>
         </div>
     </div>
+    </main>
 
     <footer class="rodape">
-        <img class="rodape-imagem" src="/img/RedLeaf2-adp.png"  width="120" height="120">
+      <div id="footer-content">
+          <div class="footer-contacts">
+            <img class="rodape-imagem" src="/img/RedLeaf3-adp.png"  width="120" height="120">
+              <h5>Todos as suas aventuras em um só lugar.</h5>
+              <div id="footer-social-media">
+              <a href="#" class="footer-link" id="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-link" id="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+               </a>
+               <a href="#" class="footer-link" id="whatsapp">
+                  <i class="fa-brands fa-whatsapp"></i>
+               </a>
+              </div>
+          </div>
+          <ul class="footer-list">
+              <li>
+                  <h3>Blog</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Blog 1</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Blog 2</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Blog 3</a>
+              </li>
+              </ul>
+          <ul class="footer-list">
+              <li>
+                  <h3>Campanhas</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Campanha 1</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Campanha 2</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Campanha 3</a>
+              </li>
+          </ul>
+          <div id="footer-subscribe">
+              <h3>Inscrever-se</h3>
+    
+              <p>
+              Coloque seu e-mail para ser notificado sobre atualizações
+              </p>
+    
+              <div id="input-group">
+                  <input type="email" id="email">
+                  <button>
+                      <i class="fa-regular fa-envelope"></i>
+                  </button>
+              </div>
+          </div>
+      </div>    
+    
+      <div id="footer-copyright">
+          &#169
+          2023 all rights reserved
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
