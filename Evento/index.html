@@ -5,38 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leaf Con - Evento RedLeaf</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
+  
   <header>
-    <img class="imagem" src="/img/RedLeaf-black.png" width="140" height="140">
-    <nav class="menu">
-      <a class="menu-item" href="/homepage">Página Principal</a>
-      <a class="menu-item" href="/portfolio">Sobre os criadores</a>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Leaf Con</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#schedule">Programação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#speakers">Palestrantes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
-          </li>
-        </ul>
-      </div>
+    <h1>Leaf Con</h1>
+    <nav>
+      <ul>
+        <h5 class="menu1"><a href="#about">Sobre o Evento</a></h5>
+        <h5 class="menu2"><a href="#schedule">Programação</a></h5>
+        <h5 class="menu3"><a href="#speakers">Palestrantes</a></h5>
+        <h5 class="menu3"><a href="#service">Credenciais</a></h5>
+        <h5 class="menu3"><a href="#contact">Contato</a></h5>
+      </ul>
     </nav>
   </header>
 
@@ -45,7 +30,42 @@
       <h1 class="display-4">Leaf Con</h1>
       <p class="lead">O maior evento de RPG da América Latina</p>
     </div>
+
+    <p id="demo"></p>
+
   </section>
+  
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 12, 2023 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+        
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+        
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+    
 
   <section id="about" class="py-5">
     <div class="container">
@@ -68,13 +88,23 @@
 
       <div class="row">
         <div class="col-md-6">
+          <h3>"Meet e Greet" com convidados</h3>
+          <p>Quinta-Feira, das 10:00 às 12:00</p>
+          <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Concurso de Cosplays</h3>
+          <p>Quinta-Feira, das 13:00 às 15:00</p>
+          <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
+        </div>
+        <div class="col-md-6">
           <h3>Palestras </h3>
-          <p>Horário: 10:00 - 14:00</p>
-          <p>Descrição: Quato palestras reunindo quatro dos mais icónicos escritores e desenvolvedores da RedLeaf.</p>
+          <p>Sexta-Feira, das 10:00 às 14:00</p>
+          <p>Descrição: Quatro palestras reunindo quatro dos mais icónicos escritores e desenvolvedores da RedLeaf.</p>
         </div>
         <div class="col-md-6">
           <h3>Painel</h3>
-          <p>Horário: 15:00 - 16:30</p>
+          <p>Sábado, das 15:00 às 16:30</p>
           <p>Descrição: Uma apresentação sobre todas as novidades da RedLeaf para os próximos meses e anos.</p>
         </div>
       </div>
@@ -118,10 +148,64 @@
     </div>
   </section>
 
+  <section class="service" id="service">
+    <div class="main-text">
+        <h2>Selecione sua credencial de acesso:</h2>
+    </div>
+
+    <div class="services-content">
+        <div class="box">
+            <div class="s-icons"> 
+            <i class='bx bx-credit-card'></i>
+            </div>
+
+            <h3>Quinta-Feira </h3>
+            <p>Inteira: R$ 360,00</p>
+            <P>Meia: R$ 180,00</P>
+            <a href="#contact" class="read">Compre!</a>
+
+        </div>
+
+        <div class="box">
+            <div class="s-icons"> 
+                <i class='bx bx-money'></i>
+            </div>
+
+            <h3>Sexta-Feira</h3>
+            <p>Inteira: R$ 400,00</p>
+            <p>Meia: R$ 200,00</p>
+            <a href="#contact" class="read">Compre!</a>
+
+        </div>
+
+        <div class="box">
+            <div class="s-icons"> 
+                <i class='bx bx-credit-card'></i>
+            </div>
+
+            <h3>Sábado</h3>
+            <p>Inteira: R$520,00</p>
+            <p>Meia: R$ 260,00</p>
+            <a href="#contact" class="read">Compre!</a>
+
+        </div>
+
+        <div class="box">
+          <div class="s-icons"> 
+              <i class='bx bx-credit-card'></i>
+          </div>
+
+          <h3>Pacote 3 Dias</h3>
+          <p>Inteira: R$1.620,00</p>
+          <p>Meia: R$ 810,00</p>
+          <a href="#contact" class="read">Compre!</a>
+
+      </div>
+
   <section id="contact" class="py-5 bg-light">
     <div class="container">
       <h2 class="display-4 text-center">Contato</h2>
-      <p class="lead text-center">Entre em contato para mais informações</p>
+      <p class="lead text-center">Entre em contato para garantir suas credenciais</p>
 
       <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -145,10 +229,74 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2023 Leaf Con - RedLeaf</p>
-  </footer>
+  <footer class="rodape">
+    <div id="footer-content">
+        <div class="footer-contacts">
+          <img class="rodape-imagem" src="/img/RedLeaf3-adp.png"  width="120" height="120">
+            <h5>Todos os seus sonhos em um só lugar.</h5>
+            <div id="footer-social-media">
+            <a href="#" class="footer-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+             </a>
+             <a href="#" class="footer-link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+             </a>
+            </div>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Blog</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog1</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog2</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog3</a>
+            </li>
+            </ul>
+        <ul class="footer-list">
+            <li>
+                <h3>Campanhas</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Campanha1</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Campanha2</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Campanha3</a>
+            </li>
+        </ul>
+        <div id="footer-subscribe">
+            <h3>Inscrever-se</h3>
 
+            <p>
+            Coloque seu e-mail para ser notificado sobre atualizações
+            </p>
+
+            <div id="input-group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>    
+
+    <div id="footer-copyright">
+        &#169
+        2023 all rights reserved
+    </div>
+</footer>
+
+  <script type="text/javascript" src="evento-script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

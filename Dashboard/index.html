@@ -10,6 +10,68 @@
 	<link rel="stylesheet" href="style.css">
 
 	<title>Redleaf Dashboard</title>
+	<!-- Google Charts API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+
+      google.charts.setOnLoadCallback(drawMissionChart);
+
+      google.charts.setOnLoadCallback(drawCharacterChart);
+
+      function drawMissionChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Mission Status');
+        data.addColumn('number', 'Mission Count');
+        data.addRows([
+          ['Sucesso', 5],
+          ['Falha', 2],
+          ['Em Progresso', 13],
+        ]);
+
+        var options = {
+			title:'Status das Missões',
+                       width:400,
+                       height:300,
+		    titleTextStyle:{color: '#AAAAAA', fontName: 'medievalsharp', fontSize: 20, bold: true},
+			legend:{textStyle: {color: '#AAAAAA', bold: true}},
+			colors:['#50C878', '#DB504A', '#3C91E6'],	
+			fontName: 'medievalsharp',	
+			backgroundColor: 'transparent',
+					};
+
+        var chart = new google.visualization.PieChart(document.getElementById('mission_chart_div'));
+        chart.draw(data, options);
+      }
+
+      function drawCharacterChart() {
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Character Status');
+        data.addColumn('number', 'Character Count');
+        data.addRows([
+          ['Vivo', 2],
+          ['Ferido', 1],
+          ['Morto', 2],
+        ]);
+
+        var options = {
+			title:'Status dos Personagens',
+                       width:400,
+                       height:300,
+					   titleTextStyle:{color: '#AAAAAA', fontName: 'medievalsharp', fontSize: 20, bold: true},
+					   legend:{textStyle: {color: '#AAAAAA', bold:true}},
+			colors:['#50C878', '#FFCE26', '#DB504A'],	
+			fontName: 'medievalsharp',	
+			backgroundColor: 'transparent',
+					};
+
+        var chart = new google.visualization.PieChart(document.getElementById('character_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
 
@@ -25,18 +87,6 @@
 				<a href="#">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
 				</a>
 			</li>
 		</ul>
@@ -59,8 +109,9 @@
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
+			<span>Dark Mode</span>
 			<a href="#" class="profile">
-				<img src="Hélio.jpg">
+				<img src="img/Hélio.jpg">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -127,7 +178,7 @@
 						<tbody>
 							<tr>
 								<td>
-									<img src="/Urban The Hagflayer.jpg">
+									<img src="img/Urban the Hagflayer.jpg">
 									<p>Urban the Hagflayer</p>
 								</td>
 								<td>5</td>
@@ -137,7 +188,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="/Nrod Lagorsson.jpg">
+									<img src="img/Nrod Lagorsson.jpg">
 									<p>Nrod Lagorsson</p>
 								</td>
 								<td>4</td>
@@ -147,7 +198,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="/Wamri le Savoureux.jpg">
+									<img src="img/Wamri le Savoureux.jpg">
 									<p>Wamri le Savoureux</p>
 								</td>
 								<td>5</td>
@@ -157,7 +208,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="/paladino.jpg">
+									<img src="img/paladino.jpg">
 									<p>Brukham Nougat</p>
 								</td>
 								<td>4</td>
@@ -167,7 +218,7 @@
 							</tr>
 							<tr>
 								<td>
-									<img src="/rogue.png">
+									<img src="img/rogue.png">
 									<p>Rolf</p>
 								</td>
 								<td>5</td>
@@ -178,34 +229,11 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="To-Do-List">
-					<div class="head">
-						<h3>To-Do-List</h3>
-						<i class='bx bx-plus' ></i>
-						<i class='bx bx-filter' ></i>
-					</div>
-					<ul class="todo-list">
-						<li class="completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-						<li class="not-completed">
-							<p>Todo List</p>
-							<i class='bx bx-dots-vertical-rounded' ></i>
-						</li>
-					</ul>
+				<div class="Gráficos">
+					<h3>Gráficos</h3>
+					<div id="mission_chart_div"></div>
+					<div id="character_chart_div"></div>
+
 				</div>
 			</div>
 		</main>
